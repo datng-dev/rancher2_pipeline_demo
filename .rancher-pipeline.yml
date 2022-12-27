@@ -4,9 +4,9 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./docker/Dockerfile
       buildContext: .
-      tag: harbor.kacsh.com/library/pipleline-demo:${CICD_GIT_COMMIT}
+      tag: 10.124.68.53:5000/library/pipleline-demo:${CICD_GIT_COMMIT}
       pushRemote: true
-      registry: harbor.kacsh.com
+      registry: 10.124.68.53:5000
   when:
     branch:
       include:
