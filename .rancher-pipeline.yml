@@ -7,6 +7,8 @@ stages:
       tag: 10.124.68.53:5000/library/pipleline-demo:${CICD_GIT_COMMIT}
       pushRemote: true
       registry: 10.124.68.53:5000
+      username: admin
+      password: 123456789
   when:
     branch:
       include:
